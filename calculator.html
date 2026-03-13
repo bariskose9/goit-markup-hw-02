@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/calculator.css" />
+  </head>
+  <body>
+    <div class="calc-wrapper">
+      <h1 class="calc-title">Calculator</h1>
+
+      <div class="calc-display">
+        <span id="display">0</span>
+      </div>
+
+      <div class="calc-buttons">
+        <!-- Row 1: function buttons -->
+        <button class="calc-btn calc-btn--function" data-action="clear">AC</button>
+        <button class="calc-btn calc-btn--function" data-action="toggle-sign">+/-</button>
+        <button class="calc-btn calc-btn--function" data-action="percent">%</button>
+        <button class="calc-btn calc-btn--operator" data-action="operator" data-value="/">÷</button>
+
+        <!-- Row 2 -->
+        <button class="calc-btn" data-action="number" data-value="7">7</button>
+        <button class="calc-btn" data-action="number" data-value="8">8</button>
+        <button class="calc-btn" data-action="number" data-value="9">9</button>
+        <button class="calc-btn calc-btn--operator" data-action="operator" data-value="*">×</button>
+
+        <!-- Row 3 -->
+        <button class="calc-btn" data-action="number" data-value="4">4</button>
+        <button class="calc-btn" data-action="number" data-value="5">5</button>
+        <button class="calc-btn" data-action="number" data-value="6">6</button>
+        <button class="calc-btn calc-btn--operator" data-action="operator" data-value="-">−</button>
+
+        <!-- Row 4 -->
+        <button class="calc-btn" data-action="number" data-value="1">1</button>
+        <button class="calc-btn" data-action="number" data-value="2">2</button>
+        <button class="calc-btn" data-action="number" data-value="3">3</button>
+        <button class="calc-btn calc-btn--operator" data-action="operator" data-value="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="calc-btn calc-btn--zero" data-action="number" data-value="0">0</button>
+        <button class="calc-btn" data-action="decimal">.</button>
+        <button class="calc-btn calc-btn--equals" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <a class="back-link" href="./index.html">← Back to Home</a>
+
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>
